@@ -47,11 +47,19 @@ const Footerr = ({ ng }) => {
           style={{
             fontSize: "30px",
             fontWeight: "normal",
-            color: "gray",
+            color: `${ng == true ? "white" : "gray"}`,
             letterSpacing: "0.2rem",
           }}
         >
-          <b style={{ fontWeight: "bold", color: "black" }}>M</b>umair
+          <b
+            style={{
+              fontWeight: "bold",
+              color: `${ng == true ? "white" : "black"}`,
+            }}
+          >
+            M
+          </b>
+          umair
         </p>
       </div>
       <div
@@ -110,10 +118,10 @@ const Footerr = ({ ng }) => {
             <Image src={ng == true ? facebookwhite : facebook} alt="facebook" />
           </li>
           <li>
-            <Image src={ng == true ? twitterwhite : twitter} alt="twitter"/>
+            <Image src={ng == true ? twitterwhite : twitter} alt="twitter" />
           </li>
           <li>
-            <Image src={ng == true ? instawhite : insta} alt="insta"/>
+            <Image src={ng == true ? instawhite : insta} alt="insta" />
           </li>
           <li>
             <a
@@ -121,7 +129,10 @@ const Footerr = ({ ng }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src={ng == true ? linkedInwhite : linkedIn} alt="linkedIn" />
+              <Image
+                src={ng == true ? linkedInwhite : linkedIn}
+                alt="linkedIn"
+              />
             </a>
           </li>
         </ul>
