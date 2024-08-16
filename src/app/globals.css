@@ -2,6 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Corvetta Personal Use';
+  src: url('https://db.onlinewebfonts.com/t/7edee2bc2d05e670908cdd165fb8b861.eot');
+  src: url('https://db.onlinewebfonts.com/t/7edee2bc2d05e670908cdd165fb8b861.eot?#iefix') format('embedded-opentype'),
+       url('https://db.onlinewebfonts.com/t/7edee2bc2d05e670908cdd165fb8b861.woff2') format('woff2'),
+       url('https://db.onlinewebfonts.com/t/7edee2bc2d05e670908cdd165fb8b861.woff') format('woff'),
+       url('https://db.onlinewebfonts.com/t/7edee2bc2d05e670908cdd165fb8b861.ttf') format('truetype'),
+       url('https://db.onlinewebfonts.com/t/7edee2bc2d05e670908cdd165fb8b861.svg#Corvetta Personal Use') format('svg');
+  font-weight: 100 900;
+}
+/* montserrat-latin-wght-normal */
+@font-face {
+  font-family: 'Montserrat Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/montserrat:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* poppins-latin-400-normal */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-400-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-700-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-700-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-200-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-200-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-500-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-500-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+
+.corvetta {
+  font-family: 'Corvetta Personal Use', sans-serif;
+}
+
+.montserrat{
+  font-family: 'Montserrat Variable', sans-serif;
+  font-weight: lighter;
+}
+
+.poppins{
+  font-family: 'Poppins', 'sans-serif';
+  /* font-weight: 400; */
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,11 +87,10 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: white;
+}
+
+
+html {
+  scroll-behavior: smooth;
 }
