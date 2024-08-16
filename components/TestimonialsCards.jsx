@@ -2,7 +2,7 @@ import React from "react";
 import test1 from "../public/assets/test1.png";
 import Image from "next/image";
 
-const TestimonialsCards = ({ bgcolor, imagee, trasnlatee, display }) => {
+const TestimonialsCards = ({ bgcolor, imagee, trasnlatee, display,ng }) => {
     const trns = trasnlatee;
     console.log(trns);
   return (
@@ -33,13 +33,14 @@ const TestimonialsCards = ({ bgcolor, imagee, trasnlatee, display }) => {
             fontSize: "0.8rem",
             width: "75%",
             fontWeight: "400",
-            color: `${display==false?"lightgray":''}`,
+            color: `${ng==true?"black":'black'}`,
           }}
         >
           <span
             style={{
               fontSize: "1.2rem",
               color: "#FD6F00",
+              
             }}
           >
             "

@@ -7,8 +7,12 @@ import twitter from "../public/assets/twitter.png";
 import insta from "../public/assets/insta.png";
 import linkedIn from "../public/assets/linkedIn.png";
 import facebook from "../public/assets/facebook.png";
+import twitterwhite from "../public/assets/twitterwhite.png";
+import instawhite from "../public/assets/instawhite.png";
+import linkedInwhite from "../public/assets/linkedInwhite.png";
+import facebookwhite from "../public/assets/facebookwhite.png";
 
-const Introbox = () => {
+const Introbox = ({ ng }) => {
   return (
     <>
       <div className="flex flex-row w-auto justify-around align-middle pt-40 flex-wrap">
@@ -88,13 +92,13 @@ const Introbox = () => {
             }}
           >
             <li>
-              <Image src={facebook} />
+              <Image src={ng == true ? facebookwhite : facebook} />
             </li>
             <li>
-              <Image src={twitter} />
+              <Image src={ng == true ? twitterwhite : twitter} />
             </li>
             <li>
-              <Image src={insta} />
+              <Image src={ng == true ? instawhite : insta} />
             </li>
             <li>
               <a
@@ -102,7 +106,7 @@ const Introbox = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image src={linkedIn} />
+                <Image src={ng == true ? linkedInwhite : linkedIn} />
               </a>
             </li>
           </ul>

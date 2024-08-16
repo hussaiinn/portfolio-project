@@ -94,3 +94,8 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.night-mode {
+  background-color: #1E1E1E  ;
+  color: white;
+}

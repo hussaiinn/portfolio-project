@@ -6,7 +6,7 @@ import graphics from "../public/assets/graphicdesignVector.png";
 import appdesign from "../public/assets/appdesignVector.png";
 import Headerss from "./Headerss";
 
-const Services = () => {
+const Services = ({ ng }) => {
   return (
     <div
       className="flex flex-col items-center mb-60"
@@ -24,13 +24,10 @@ const Services = () => {
       />
       <div
         className="flex flex-row mt-10 justify-around poppins"
-        style={
-          {
-            // border: "1px solid black",
-            width: "85%"
-
-          }
-        }
+        style={{
+          // border: "1px solid black",
+          width: "85%",
+        }}
       >
         <ServicesBox
           icons={uiux}
@@ -38,6 +35,7 @@ const Services = () => {
           content={
             "Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum"
           }
+          ng={ng}
         />
         <ServicesBox
           icons={webdesign}
@@ -45,6 +43,7 @@ const Services = () => {
           content={
             "Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum"
           }
+          ng={ng}
         />
         <ServicesBox
           icons={appdesign}
@@ -52,6 +51,7 @@ const Services = () => {
           content={
             "Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum"
           }
+          ng={ng}
         />
         <ServicesBox
           icons={graphics}
@@ -59,6 +59,7 @@ const Services = () => {
           content={
             "Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum"
           }
+          ng={ng}
         />
       </div>
     </div>

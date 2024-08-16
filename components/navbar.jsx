@@ -1,20 +1,32 @@
+'use client'
 import React from "react";
 import Buttons from "./Buttons";
 import Link from "next/link";
+import moon from "../public/assets/moon.png";
+import sun from "../public/assets/sun.png";
+import Image from "next/image";
 
-const Navbar = () => {
+const Navbar = ({ngEffect, ng}) => {
+  const onNightButtonClick = ()=>{
+    document.body.classList.toggle('night-mode');
+    console.log('clicked')
+    ngEffect();
+  }
+
   return (
     <>
       <div
         className="navbarr"
         style={{
           display: "flex",
-          //   border: "1px solid black",
+          // border: "1px solid black",
           paddingTop: "3rem",
-          justifyContent: "space-around",
+          paddingLeft: '10rem',
+          paddingRight: '3rem',
+          justifyContent: "space-between",
           position: "fixed",
           width: "100%",
-          backgroundColor: "white",
+          backgroundColor: `${ng==true?'#1E1E1E':'white'}`,
           zIndex: "3",
         }}
       >
@@ -23,9 +35,10 @@ const Navbar = () => {
           style={{
             display: "flex",
             flexDirection: "row",
-            width: "12%",
+            width: "15%",
             // border: "1px solid black",
             justifyContent: "space-around",
+            padding: '1rem'
           }}
         >
           <div
@@ -35,8 +48,8 @@ const Navbar = () => {
               borderRadius: "50%",
               width: "3rem",
               height: "3rem",
-              padding: "rem",
-              fontSize: "2rem",
+              padding: ".2rem",
+              fontSize: "1.5rem",
               color: "white",
             }}
           >
@@ -58,7 +71,7 @@ const Navbar = () => {
           className="navbarr2 poppins "
           style={{
             // border: "1px solid black",
-            width: "50%",
+            width: "65%",
             letterSpacing: "0.09rem",
           }}
         >
@@ -106,6 +119,39 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
+        </div>
+        <div
+          className="navbarr"
+          style={{
+            // display: "flex",
+            // border: "1px solid black",
+            // paddingTop: "3rem",
+            justifyContent: "space-around",
+            // position: "fixed",
+            width: "5%",
+            backgroundColor: `${ng==true?'#1E1E1E':'white'}`,
+            zIndex: "3",
+            alignItems: "center",
+            padding: "1rem",
+          }}
+        >
+          <div
+            style={{
+              height: "2.5rem",
+              width: "2.5rem",
+              backgroundColor: "#FD6F00",
+              color: "white",
+              borderRadius: "50%",
+              padding: "0.5rem",
+              cursor: 'pointer',
+              transition: 'ease-in'
+              
+            }}
+            onClick={onNightButtonClick}
+            
+          >
+            <Image src={ng==true?sun:moon} color="white" />
+          </div>
         </div>
       </div>
     </>

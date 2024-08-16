@@ -3,7 +3,7 @@ import TestimonialsCards from "./TestimonialsCards";
 import Buttons from "./Buttons";
 import Headerss from "./Headerss";
 
-const Testimonials = () => {
+const Testimonials = ({ng}) => {
   return (
     <>
       <div
@@ -28,7 +28,7 @@ const Testimonials = () => {
           }}
         >
           {/* <TestimonialsCards bgcolor={'white'} trasnlatee='translateX(-15rem)' display={false}/> */}
-          <TestimonialsCards bgcolor={"#F8F8F8"} />
+          <TestimonialsCards bgcolor={"#F8F8F8"} ng={ng} />
           {/* <TestimonialsCards bgcolor={'white'} trasnlatee='translateX(15rem)' display={false}/> */}
         </div>
         <div className="flex flex-row justify-center w-full mt-14">

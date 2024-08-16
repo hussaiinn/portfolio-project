@@ -3,14 +3,18 @@ import twitter from "../public/assets/twitter.png";
 import insta from "../public/assets/insta.png";
 import linkedIn from "../public/assets/linkedIn.png";
 import facebook from "../public/assets/facebook.png";
+import twitterwhite from "../public/assets/twitterwhite.png";
+import instawhite from "../public/assets/instawhite.png";
+import linkedInwhite from "../public/assets/linkedInwhite.png";
+import facebookwhite from "../public/assets/facebookwhite.png";
 import Image from "next/image";
 
-const Footerr = () => {
+const Footerr = ({ ng }) => {
   return (
     <div
       className="footers flex flex-col items-center pt-16 justify-between"
       style={{
-        backgroundColor: "#F8F8F8",
+        backgroundColor: `${ng == true ? "#1E1E1E" : "#F8F8F8"}`,
         height: "25rem",
       }}
     >
@@ -103,16 +107,22 @@ const Footerr = () => {
           }}
         >
           <li>
-            <Image src={facebook} />
+            <Image src={ng == true ? facebookwhite : facebook} />
           </li>
           <li>
-            <Image src={twitter} />
+            <Image src={ng == true ? twitterwhite : twitter} />
           </li>
           <li>
-            <Image src={insta} />
+            <Image src={ng == true ? instawhite : insta} />
           </li>
           <li>
-            <Image src={linkedIn} />
+            <a
+              href="https://github.com/hussaiinn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src={ng == true ? linkedInwhite : linkedIn} />
+            </a>
           </li>
         </ul>
       </div>
@@ -121,7 +131,7 @@ const Footerr = () => {
         style={{
           width: "100%",
           height: "3rem",
-          backgroundColor: "#545454",
+          backgroundColor: `${ng == true ? "black" : "#545454"}`,
           fontWeight: "200",
           fontSize: "0.9rem",
           letterSpacing: "0.08rem",
