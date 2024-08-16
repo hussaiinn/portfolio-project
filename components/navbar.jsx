@@ -60,11 +60,11 @@ const Navbar = ({ngEffect, ng}) => {
             style={{
               fontSize: "30px",
               fontWeight: "normal",
-              color: "gray",
+              color: `${ng==true?'white':"gray"}`,
               letterSpacing: "0.2rem",
             }}
           >
-            <b style={{ fontWeight: "bold", color: "black" }}>M</b>umair
+            <b style={{ fontWeight: "bold", color: `${ng==true?'white':'black'}` }}>M</b>umair
           </p>
         </div>
         <div
