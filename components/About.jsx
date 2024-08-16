@@ -22,7 +22,7 @@ const About = () => {
           }}
         >
           <Image src={aboutfinalimage} width={'100%'} alt="My Image" style={{
-            height: '95%',
+            height: '90%',
             maxWidth: '100%',
             width: '100%'
           }}/>
