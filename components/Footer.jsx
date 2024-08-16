@@ -36,7 +36,7 @@ const Footerr = ({ ng }) => {
             width: "3rem",
             height: "3rem",
             padding: "rem",
-            fontSize: "2rem",
+            fontSize: "1.5rem",
             color: "white",
           }}
         >
