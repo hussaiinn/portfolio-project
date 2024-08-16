@@ -38,7 +38,7 @@ const Projects = () => {
           className="flex flex-row justify-around
           "
           style={{
-            width: "40%",
+            width: "45%",
             margin: "5rem auto",
           }}
         >
