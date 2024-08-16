@@ -6,6 +6,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
+    {/* About my Skills */}
       <div
         className="flex flex-row mt-60 justify-around mb-60"
         style={{
@@ -21,6 +22,7 @@ const About = () => {
 
           }}
         >
+          {/* My Image */}
           <Image src={aboutfinalimage} width={'100%'} alt="My Image" style={{
             height: '90%',
             maxWidth: '100%',
@@ -44,6 +46,7 @@ const About = () => {
             nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis
             tempus pharetra
           </p>
+          {/* My Skills */}
           <SkillsBars content="UX" scale="5" />
           <SkillsBars content="Web Design" scale="4" />
           <SkillsBars content="App Design" scale="5" />

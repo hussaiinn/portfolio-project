@@ -15,6 +15,7 @@ import facebookwhite from "../public/assets/facebookwhite.png";
 const Introbox = ({ ng }) => {
   return (
     <>
+    {/* Outer container of About block */}
       <div className="flex flex-row w-auto justify-around align-middle pt-40 flex-wrap">
         <div
           style={{
@@ -26,6 +27,7 @@ const Introbox = ({ ng }) => {
             // height: "25rem"
           }}
         >
+          {/* About me */}
           <div
             className="poppins"
             style={{
@@ -62,6 +64,7 @@ const Introbox = ({ ng }) => {
             </a>
           </div>
         </div>
+        {/* My Image */}
         <div
           className=""
           style={{
@@ -80,6 +83,7 @@ const Introbox = ({ ng }) => {
           >
             <Image src={introfinalimage} alt="My Image" />
           </div>
+          {/* Links to Connect insta facebook twitter linkedIn */}
           <ul
             style={{
               display: "flex",

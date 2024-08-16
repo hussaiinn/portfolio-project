@@ -14,6 +14,7 @@ const Testimonials = ({ng}) => {
           letterSpacing: "0.08rem",
         }}
       >
+        {/* Headers component it's reusable, it takes head and content as parameters */}
         <Headerss
           head={"Testimonials"}
           content={
@@ -28,6 +29,7 @@ const Testimonials = ({ng}) => {
           }}
         >
           {/* <TestimonialsCards bgcolor={'white'} trasnlatee='translateX(-15rem)' display={false}/> */}
+          {/* Testemonial Cards to display tetimonies */}
           <TestimonialsCards bgcolor={"#F8F8F8"} ng={ng} />
           {/* <TestimonialsCards bgcolor={'white'} trasnlatee='translateX(15rem)' display={false}/> */}
         </div>

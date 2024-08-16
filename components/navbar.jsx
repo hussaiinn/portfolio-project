@@ -7,6 +7,7 @@ import sun from "../public/assets/sun.png";
 import Image from "next/image";
 
 const Navbar = ({ngEffect, ng}) => {
+  //a Function to manage dark mode nd light mode
   const onNightButtonClick = ()=>{
     document.body.classList.toggle('night-mode');
     console.log('clicked')
@@ -15,6 +16,7 @@ const Navbar = ({ngEffect, ng}) => {
 
   return (
     <>
+      {/* Navbar Component outher layer to see the area covered uncomment the border from styles */}
       <div
         className="navbarr"
         style={{
@@ -30,6 +32,7 @@ const Navbar = ({ngEffect, ng}) => {
           zIndex: "3",
         }}
       >
+        {/* Website Logo*/}
         <div
           className="navbarr1"
           style={{
@@ -67,6 +70,7 @@ const Navbar = ({ngEffect, ng}) => {
             <b style={{ fontWeight: "bold", color: `${ng==true?'white':'black'}` }}>M</b>umair
           </p>
         </div>
+        {/* Navabar Links */}
         <div
           className="navbarr2 poppins "
           style={{
@@ -103,6 +107,7 @@ const Navbar = ({ngEffect, ng}) => {
               <a href="#contact">Contact</a>
             </li>
             <li>
+              {/* Downlaod CV Button */}
               <a
                 href="https://hussain-portfolio-ten.vercel.app/resume"
                 target="_blank"
@@ -120,6 +125,7 @@ const Navbar = ({ngEffect, ng}) => {
             </li>
           </ul>
         </div>
+        {/* Night Mode button */}
         <div
           className="navbarr"
           style={{

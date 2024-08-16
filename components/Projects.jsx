@@ -11,6 +11,7 @@ import wd6 from "../public/assets/wd6.png";
 import Headerss from "./Headerss";
 
 const Projects = () => {
+  // Function to change projects according to what user selected
   const [buttonName, setButtonName] = useState("wd");
   const onButtonClick = (name) => {
     return () => {
@@ -20,6 +21,7 @@ const Projects = () => {
   };
   return (
     <>
+      {/* Outer layer of projects block */}
       <div
         className="flex flex-col items-center mb-60"
         style={{
@@ -28,6 +30,7 @@ const Projects = () => {
           letterSpacing: "0.08rem",
         }}
       >
+        {/* Header a reusable component */}
         <Headerss
           head={"My Projects"}
           content={
@@ -42,14 +45,16 @@ const Projects = () => {
             margin: "5rem auto",
           }}
         >
+          {/* Buttons component it's reusable*/}
+          {/* It has various paramters to design our button */}
           <Buttons
             width={"4rem"}
             height={"2rem"}
-            bgcolor={`${buttonName == "all" ? "#FD6F00" : "#F8F8F8"}`}
+            bgcolor={`${buttonName == "all" ? "#FD6F00" : "#F8F8F8"}`} //this is how the color of buttons are changed as per the selection
             content={"All"}
-            borders={`${buttonName == "all" ? "" : "1px solid #545454"}`}
+            borders={`${buttonName == "all" ? "" : "1px solid #545454"}`} //this is how the borders color of buttons are changed as per the selection
             bradius={"0.5rem"}
-            color={`${buttonName == "all" ? "white" : "#000000"}`}
+            color={`${buttonName == "all" ? "white" : "#000000"}`} //this is how the text color of buttons are changed as per the selection
             fweight={"400"}
             onClick={onButtonClick("all")}
           />
@@ -106,15 +111,17 @@ const Projects = () => {
             margin: "0 auto",
           }}
         >
+          {/* Projects card to display projects with project image and desc. it's a reusable component */}
+          {/* It takes two images and a head and content as paramteres */}
           <ProjectsCard
             image1={
-              buttonName == "wd"
+              buttonName == "wd" //Images are changed as per the user selection
                 ? wd1
-                : buttonName == "ad"
+                : buttonName == "ad" //Images are changed as per the user selection
                 ? wd2
-                : buttonName == "gd"
+                : buttonName == "gd" //Images are changed as per the user selection
                 ? wd3
-                : buttonName == "all"
+                : buttonName == "all" //Images are changed as per the user selection
                 ? wd4
                 : wd5
             }

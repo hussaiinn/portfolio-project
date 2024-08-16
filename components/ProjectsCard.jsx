@@ -25,6 +25,7 @@ const ProjectsCard = ({image1, image2, head, content}) => {
             gap: "0rem", // Optional: space between images
           }}
         >
+          {/* Project Images */}
           <Image
             src={image1} alt="Project Image"
             style={{
@@ -47,7 +48,9 @@ const ProjectsCard = ({image1, image2, head, content}) => {
             }}
           />
         </div>
+        {/* Project head */}
         <h1 className="poppins" style={{color: "#FD6F00", fontSize: "0.8rem"}}>{head}</h1>
+        {/* Project content */}
         <p className="poppins font-bold">{content}</p>
       </div>
     </>

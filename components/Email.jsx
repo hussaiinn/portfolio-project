@@ -4,6 +4,7 @@ import Headerss from "./Headerss";
 import Buttons from "./Buttons";
 
 const Email = () => {
+  //function to call when email is submitted
   const onButtonClick = () => {
     alert("Your email is Successfully Registered");
   };
@@ -31,7 +32,7 @@ const Email = () => {
           }}
         >
           <input
-            type="text"
+            type="email"
             placeholder="Enter Your Email"
             style={{
               border: "1px solid #AFAFAF",

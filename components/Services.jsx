@@ -8,6 +8,7 @@ import Headerss from "./Headerss";
 
 const Services = ({ ng }) => {
   return (
+    // Outer block of Services box
     <div
       className="flex flex-col items-center mb-60"
       style={{
@@ -16,6 +17,7 @@ const Services = ({ ng }) => {
         letterSpacing: "0.08rem",
       }}
     >
+      {/* Header Component it's reusable */}
       <Headerss
         head={"Services"}
         content={
@@ -29,6 +31,7 @@ const Services = ({ ng }) => {
           width: "85%",
         }}
       >
+        {/* Services Box Component it's reusable */}
         <ServicesBox
           icons={uiux}
           head={"UI/UX"}

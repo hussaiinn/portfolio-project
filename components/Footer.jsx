@@ -19,7 +19,7 @@ const Footerr = ({ ng }) => {
       }}
     >
       <div
-        className="navbarr1"
+        className="Footer1"
         style={{
           display: "flex",
           flexDirection: "row",
