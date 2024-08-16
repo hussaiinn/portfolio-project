@@ -40,6 +40,7 @@ const Email = () => {
               padding: "0.5rem",
               width: "70%",
               borderRadius: "0.5rem",
+              color: 'black'
             }}
           />
           <Buttons
