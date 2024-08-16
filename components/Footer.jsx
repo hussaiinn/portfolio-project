@@ -35,7 +35,7 @@ const Footerr = ({ ng }) => {
             borderRadius: "50%",
             width: "3rem",
             height: "3rem",
-            padding: "rem",
+            padding: ".2rem",
             fontSize: "1.5rem",
             color: "white",
           }}
