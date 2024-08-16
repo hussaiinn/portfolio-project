@@ -150,7 +150,7 @@ const Navbar = ({ngEffect, ng}) => {
             onClick={onNightButtonClick}
             
           >
-            <Image src={ng==true?sun:moon} color="white" />
+            <Image src={ng==true?sun:moon} color="white" alt="Sun" />
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ const TestimonialsCards = ({ bgcolor, imagee, trasnlatee, display,ng }) => {
         }}
       >
         <Image
-          src={test1}
+          src={test1} alt="Photo"
           style={{
             maxWidth: "20%",
             height: "65%",

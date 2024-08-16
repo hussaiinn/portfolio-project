@@ -13,7 +13,7 @@ const ServicesBox = ({ head, content, icons, ng }) => {
           color: `${ng == true ? "black" : "black"}`,
         }}
       >
-        <Image src={icons} />
+        <Image src={icons} alt="Icons" />
         <h1 className="mt-6 text-2xl poppins font-bold">{head}</h1>
         <p className="mt-4 poppins">{content}</p>
       </div>

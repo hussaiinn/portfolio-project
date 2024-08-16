@@ -26,7 +26,7 @@ const ProjectsCard = ({image1, image2, head, content}) => {
           }}
         >
           <Image
-            src={image1}
+            src={image1} alt="Project Image"
             style={{
               maxWidth: "70%",
               width: "70%",
@@ -37,7 +37,7 @@ const ProjectsCard = ({image1, image2, head, content}) => {
             }}
           />
           <Image
-            src={image2}
+            src={image2} alt="Project Image"
             style={{
               maxWidth: "100%",
               width: "70%",

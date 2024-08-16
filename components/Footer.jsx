@@ -107,13 +107,13 @@ const Footerr = ({ ng }) => {
           }}
         >
           <li>
-            <Image src={ng == true ? facebookwhite : facebook} />
+            <Image src={ng == true ? facebookwhite : facebook} alt="facebook" />
           </li>
           <li>
-            <Image src={ng == true ? twitterwhite : twitter} />
+            <Image src={ng == true ? twitterwhite : twitter} alt="twitter"/>
           </li>
           <li>
-            <Image src={ng == true ? instawhite : insta} />
+            <Image src={ng == true ? instawhite : insta} alt="insta"/>
           </li>
           <li>
             <a
@@ -121,7 +121,7 @@ const Footerr = ({ ng }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src={ng == true ? linkedInwhite : linkedIn} />
+              <Image src={ng == true ? linkedInwhite : linkedIn} alt="linkedIn" />
             </a>
           </li>
         </ul>
